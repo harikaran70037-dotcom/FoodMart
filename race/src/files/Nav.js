@@ -4,11 +4,15 @@ import '../files/Nav.css'
 import { Link } from 'react-router-dom'
 
 const Nav = () => {
+
+  const naviagte=(data)=>{
+    window.location.href=data
+  }
   return (
     <div>
           
             
-        <img className='no' src ={img1} alt=""/>
+     <Link to="/" > <img className='no' src ={img1} alt=""/> </Link>
         <div className='move'>
           <div>
             <select class="form-select" aria-label="Default select example" className='no3'>
@@ -53,29 +57,31 @@ const Nav = () => {
           <div className='no12'>
             <div>
             <select class="form-select" aria-label="Default select example" className='no10'>
-  <option selected>Shop by Departments</option>
-  <option value="1">Groceries</option>
-  <option value="2">Drinks</option>
-  <option value="3">Chocolates</option>
+  <option selected >Menu</option>
+  <option value="1" >Fruit</option>
+  <option value="2">Juice</option>
+  <option value="3">Snacks</option>
+  <option value="3">Veg</option>
+  <option value="3"> NonVeg</option>
+  <option value="3">Sweet</option>
 </select>
 </div>
 <div>
 <nav>
 <Link to="/fruit"> <p className='cds'>Fruit</p>  </Link>
  <Link to ="/veg"> <p className='cds'>Vegetables</p> </Link>
- <Link to ="juice"> <p className='cds'>Juice</p> </Link>
-  <p>Accessories</p>
+ <Link to ="/juice"> <p className='cds'>Juice</p> </Link>
+ <Link to ="/snaks"> <p className='cds'>Snacks</p> </Link>
   <p>
             <select class="form-select" aria-label="Default select example" className='no11'>
-  <option selected>pages</option>
-  <option value="1">About</option>
-  <option value="2">Shop</option>
-  <option value="3">Cart</option>
-    <option value="4">Style</option>
-      <option value="5">Contact</option>
-        <option value="6">Thank you</option>
+  <option selected>Food</option>
+ {/* <Link  to ='/veg'> */}
+  <option  onClick={()=>naviagte("/veg")} value="1">Veg</option>
+  {/* </Link> */}
+  {/* <option onClick={()=>naviagte("/veg")} value="2">Nonveg</option> */}
+ 
 </select></p>
-  <p>Brand</p>
+ <Link to='/sweet'><p className='cds'>Sweet</p> </Link> 
   <p>Sale</p>
   <p>Blog</p>
   <br/><br></br><h5><i class="fa-solid fa-gift"></i> Get pro version</h5>

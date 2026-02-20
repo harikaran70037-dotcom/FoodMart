@@ -1,13 +1,14 @@
 import React from 'react'
-import Page3 from '../files/Page3'
 import Ext from './Ext'
-const Juice = () => {
+import Vg from './Vg'
+
+const Vegfood = () => {
   return (
-     <div>
+    <div>
     <div className="row">
-  {Page3.map((itm) => (
+  {Vg.map((itm) => (
     <div className="col" key={itm.id}>
-      <div className="card animate__animated animate__fadeInUp">
+      <div className="card animate__animated animate__fadeInUp ">
         <img
           src={itm.img}
           className="card-img-top"
@@ -22,9 +23,12 @@ const Juice = () => {
     </div>
   ))}
 </div>
+<br></br>
+<br></br>
+
 <Ext/>
     </div>
   )
 }
 
-export default Juice
+export default Vegfood

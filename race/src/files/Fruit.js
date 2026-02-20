@@ -1,5 +1,6 @@
 import React from 'react'
 import New from '../files/New'
+import Ext from './Ext'
 
 const Fruit = () => {
   return (
@@ -7,9 +8,9 @@ const Fruit = () => {
     <div className="row">
   {New.map((itm) => (
     <div className="col" key={itm.id}>
-      <div className="card">
-        <img
-          src={itm.img}
+      <div  className="card animate__animated animate__fadeInUp">
+        <img 
+          src=  {itm.img }
           className="card-img-top"
           alt={itm.title}
         />
@@ -22,7 +23,7 @@ const Fruit = () => {
     </div>
   ))}
 </div>
-
+<Ext/>
     </div>
   
     

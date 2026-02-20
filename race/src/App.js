@@ -10,10 +10,13 @@ import Juice from './files/Juice';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import New from './files/New';
 // import { Router } from 'express';
-
+import "./App.css"
+import Snaks from './files/Snaks';
+import Sweet from './files/Sweet';
+import Vegfood from './files/Vegfood';
 function App() {
   return (
-    <div >
+    <div  className='fullproject'>
       <BrowserRouter>
     
       <Nav/>
@@ -24,11 +27,13 @@ function App() {
        <Route path='/fruit'element={ <Fruit/>}/>   
        <Route path='/juice'element={ <Juice/>}/>   
        <Route path='/veg'element={ <Veg/>}/>   
+       <Route path='/snaks'element={<Snaks/>}/>
+       <Route path='/sweet'element={<Sweet/>}/>
+       <Route path='/veg'element={<Vegfood/>}/>
 </Routes>
-      <Veg/>
-      <Juice/>
+
      </BrowserRouter>
-      
+   
     </div>
   );
 }

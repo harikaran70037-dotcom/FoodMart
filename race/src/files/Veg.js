@@ -1,5 +1,6 @@
 import React from 'react'
 import Page2 from '../files/Page2'
+import Ext from './Ext'
 
 const Veg = () => {
   return (
@@ -7,7 +8,7 @@ const Veg = () => {
     <div className="row">
   {Page2.map((itm) => (
     <div className="col" key={itm.id}>
-      <div className="card">
+      <div className="card animate__animated animate__fadeInUp">
         <img
           src={itm.img}
           className="card-img-top"
@@ -22,7 +23,10 @@ const Veg = () => {
     </div>
   ))}
 </div>
+<br></br>
+<br></br>
 
+<Ext/>
     </div>
   
   )

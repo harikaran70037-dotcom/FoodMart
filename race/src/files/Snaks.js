@@ -1,11 +1,11 @@
 import React from 'react'
-import Page3 from '../files/Page3'
+import Snk from './Snk'
 import Ext from './Ext'
-const Juice = () => {
+const Snaks = () => {
   return (
-     <div>
-    <div className="row">
-  {Page3.map((itm) => (
+    <div>
+          <div className="row">
+  {Snk.map((itm) => (
     <div className="col" key={itm.id}>
       <div className="card animate__animated animate__fadeInUp">
         <img
@@ -27,4 +27,4 @@ const Juice = () => {
   )
 }
 
-export default Juice
+export default Snaks
